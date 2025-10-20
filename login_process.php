@@ -29,7 +29,7 @@ try {
   $ok = $user && password_verify($pass, $user['password_hash']);
   if (!$ok) {
     usleep(250000); // 250ms
-    $_SESSION['flash'] = 'Invalid email or password.';
+    $_SESSION['flash'] = ['msg' => 'Invalid email or password.', 'type' => 'danger'];
     header('Location: login.php'); exit;
   }
 
