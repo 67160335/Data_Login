@@ -46,7 +46,7 @@ if (is_array($flash)) {
               <span>Password</span>
               <a href="#" class="small text-decoration-none" onclick="alert('Ask admin to reset');return false;">Forgot?</a>
             </label>
-            <input class="form-control" type="password" id="password" name="password" placeholder="••••••••" required>
+            <input class="form-control" type="password" id="password" name="password" placeholder="passwor" required>
           </div>
           <div class="d-grid gap-2 mt-3">
             <button class="btn btn-primary" type="submit">Sign in</button>
